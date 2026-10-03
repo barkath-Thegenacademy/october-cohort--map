@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600;800&family=Geist:wght@300;500;600;700&display=swap');
+.mascot-crew{display:flex;align-items:flex-end;justify-content:center;width:158px;filter:drop-shadow(0 10px 12px rgba(26,26,26,.16))}.mascot-crew .glo-sprite{width:86px;height:170px;background-size:1229px 819px}.glo-standing{background-position:-13px -34px}.lumi-standing{background-position:-425px -34px;margin-left:-18px;z-index:2}.lumi-pin{position:absolute;inset:0;background-image:url('./assets/glo-character-sheet.png');background-repeat:no-repeat;background-size:538px 358px;background-position:-186px -16px;z-index:1}
+@media(max-width:900px){.mascot-crew{width:120px;transform:scale(.78);transform-origin:center bottom}}@media(max-width:560px){.mascot-crew{transform:scale(.68)}}
 .glo-cheering{width:103px!important;height:128px!important}
 @font-face{font-family:'Geist Pixel';src:url('./assets/GeistPixel-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
 .brand-cohort strong{color:var(--ink);font-weight:400;font-size:.8rem;letter-spacing:.06em}

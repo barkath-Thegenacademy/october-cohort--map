@@ -25,11 +25,14 @@
     <section class="intro" aria-labelledby="page-title">
       <div class="headline">
         <h1 id="page-title">Hello,<br><em>October cohort members!</em></h1>
-        <p><strong>Find your people. Follow the sun.</strong> Each Glo marker is a cohort member - zoom in, say hello, and discover who’s building nearby.</p>
+        <p><strong>Find your people. Follow the sun.</strong> Each Glo or Lumi marker is a cohort member - zoom in, say hello, and discover who’s building nearby.</p>
       </div>
       <figure class="mascot">
-        <span>I’m Glo! Let’s explore.</span>
-        <div class="glo-sprite glo-cheering" role="img" aria-label="Glo, The Gen Academy mascot, cheering"></div>
+        <span>Glo + Lumi say hi!</span>
+        <div class="mascot-crew" role="img" aria-label="Glo and Lumi, The Gen Academy mascots">
+          <div class="glo-sprite glo-standing" aria-hidden="true"></div>
+          <div class="glo-sprite lumi-standing" aria-hidden="true"></div>
+        </div>
       </figure>
       <dl class="stats" aria-label="Cohort statistics">
         <div><dd id="studentCount">333</dd><dt>Cohort members</dt></div>
@@ -42,18 +45,17 @@
         <label for="place">Where do you want to go?</label>
         <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="place" type="search" autocomplete="off" placeholder="Search a person, city, role, or company"></div>
         <div id="results" class="results" role="listbox" aria-label="Search results"></div>
-        <div class="legend"><span class="sun">☀</span><p><strong>Glo follows local time</strong><small>sunrise yellow · noon gold · dusk orange · night purple</small></p></div>
+        <div class="legend"><span class="sun">☀</span><p><strong>Glo + Lumi follow local time</strong><small>sunrise yellow · noon gold · dusk orange · night purple</small></p></div>
       </aside>
       <span class="explore-pill">✦ Explore the cohort</span>
       <div id="map" role="application" aria-label="World map of October 2026 cohort members"></div>
     </section>
     <footer>
-      <p><strong>Meet the map</strong> <span>cluster = local crew</span> <span>Glo = individual member</span></p>
-      <p id="dataNote">4 profiles are waiting for a location.</p>
+      <p><strong>Meet the map</strong> <span>cluster = local crew</span> <span>Glo or Lumi = individual member</span></p>
     </footer>
     <div class="brand-footer">
       <img src="./assets/tga-logo-dark.png" alt="The Gen Academy">
-      <p>Glo says: learn, build, share, repeat.</p>
+      <p>Glo + Lumi say: learn, build, share, repeat.</p>
     </div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
