@@ -5,7 +5,7 @@ const cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRad
 const safe = (value = '') => String(value).replace(/[&<>'"]/g, (ch) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 const linkedIn = (url = '') => { if (!url) return ''; const normalized = /^https?:\/\//i.test(url) ? url : `https://${url}`; try { return new URL(normalized).hostname.toLowerCase().endsWith('linkedin.com') ? normalized : ''; } catch { return ''; } };
 const colorForLongitude = (lng) => { const now = new Date(); const local = (now.getUTCHours() + now.getUTCMinutes() / 60 + lng / 15 + 24) % 24; if (local >= 6 && local < 10) return '#ffd500'; if (local >= 10 && local < 17) return '#ffbf00'; if (local >= 17 && local < 21) return '#ff5634'; return '#7d83ff'; };
-const iconFor = (lng) => L.divIcon({ className: '', iconSize: [40, 43], iconAnchor: [20, 42], popupAnchor: [0, -36], html: `<div class="agent-pin" style="--pin:${colorForLongitude(lng)}"><img src="./assets/ting-head.png" alt=""></div>` });
+const iconFor = (lng) => L.divIcon({ className: '', iconSize: [42, 55], iconAnchor: [21, 54], popupAnchor: [0, -45], html: `<div class="agent-pin" style="--pin:${colorForLongitude(lng)}"><span class="glo-pin"></span></div>` });
 let members = []; let markers = [];
 const search = document.querySelector('#place'); const results = document.querySelector('#results');
 function openMember(member) { const marker = markers.find((item) => item.member.id === member.id)?.marker; if (!marker) return; map.setView(marker.getLatLng(), Math.max(map.getZoom(), 7), { animate: true }); cluster.zoomToShowLayer(marker, () => marker.openPopup()); results.classList.remove('active'); }
