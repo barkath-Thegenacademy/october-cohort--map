@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231a1a1a'/%3E%3Cpath d='M16 34c0-13 7-24 17-24 11 0 18 11 18 24 0 13-8 22-18 22S16 47 16 34Z' fill='%23ffd500'/%3E%3Cpath d='M38 7h14v14l-5-5-8 8-6-6 8-8Z' fill='%23ff5634'/%3E%3Ccircle cx='27' cy='36' r='3' fill='%231a1a1a'/%3E%3Ccircle cx='39' cy='36' r='3' fill='%231a1a1a'/%3E%3Cpath d='M27 45c4 3 8 3 12 0' fill='none' stroke='%231a1a1a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="./assets/ting-head.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#atlas" aria-label="The Gen Academy October cohort atlas">
-      <span class="brand-mark" aria-hidden="true">✦</span>
-      <span><small>MASTERING AGENTIC AI CERTIFICATION · OCTOBER 2026</small><strong>The Curious <em>Agents Club</em></strong></span>
+      <img src="./assets/tga-logo-light.png" alt="The Gen Academy">
+      <span class="brand-cohort">Mastering Agentic AI<br><b>October 2026</b></span>
     </a>
     <span class="live-pill"><i></i> Live around the world</span>
   </header>
@@ -28,6 +28,10 @@
         <h1 id="page-title">Find your people.<br><em>Follow the sun.</em></h1>
         <p>Each marker is an October cohort member. Zoom in, hover to say hello, and discover who’s building nearby.</p>
       </div>
+      <figure class="mascot">
+        <span>Hello, October!</span>
+        <img src="./assets/ting-mascot.png" alt="Ting, The Gen Academy cohort mascot">
+      </figure>
       <dl class="stats" aria-label="Cohort statistics">
         <div><dd id="studentCount">333</dd><dt>Cohort members</dt></div>
         <div><dd id="placeCount">203</dd><dt>Mapped places</dt></div>
@@ -48,6 +52,10 @@
       <p><strong>Meet the map</strong> <span>cluster = local crew</span> <span>marker = individual member</span></p>
       <p id="dataNote">4 profiles are waiting for a location.</p>
     </footer>
+    <div class="brand-footer">
+      <img src="./assets/tga-logo-dark.png" alt="The Gen Academy">
+      <p>Learning AI and building the future, together.</p>
+    </div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
