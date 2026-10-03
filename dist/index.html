@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Curious Agents Club — October 2026 Cohort Atlas</title>
+  <meta name="description" content="Explore the October 2026 Mastering Agentic AI cohort around the world.">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231a1a1a'/%3E%3Cpath d='M16 34c0-13 7-24 17-24 11 0 18 11 18 24 0 13-8 22-18 22S16 47 16 34Z' fill='%23ffd500'/%3E%3Cpath d='M38 7h14v14l-5-5-8 8-6-6 8-8Z' fill='%23ff5634'/%3E%3Ccircle cx='27' cy='36' r='3' fill='%231a1a1a'/%3E%3Ccircle cx='39' cy='36' r='3' fill='%231a1a1a'/%3E%3Cpath d='M27 45c4 3 8 3 12 0' fill='none' stroke='%231a1a1a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#atlas" aria-label="The Gen Academy October cohort atlas">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span><small>MASTERING AGENTIC AI CERTIFICATION · OCTOBER 2026</small><strong>The Curious <em>Agents Club</em></strong></span>
+    </a>
+    <span class="live-pill"><i></i> Live around the world</span>
+  </header>
+  <main id="atlas">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="headline">
+        <span class="eyebrow">01/ THE COHORT ATLAS</span>
+        <h1 id="page-title">Find your people.<br><em>Follow the sun.</em></h1>
+        <p>Each marker is an October cohort member. Zoom in, hover to say hello, and discover who’s building nearby.</p>
+      </div>
+      <dl class="stats" aria-label="Cohort statistics">
+        <div><dd id="studentCount">333</dd><dt>Cohort members</dt></div>
+        <div><dd id="placeCount">203</dd><dt>Mapped places</dt></div>
+        <div><dd id="countryCount">17</dd><dt>Countries</dt></div>
+      </dl>
+    </section>
+    <section class="map-shell" aria-label="Interactive cohort map">
+      <aside class="map-panel">
+        <label for="place">Where do you want to go?</label>
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="place" type="search" autocomplete="off" placeholder="Search a person, city, role, or company"></div>
+        <div id="results" class="results" role="listbox" aria-label="Search results"></div>
+        <div class="legend"><span class="sun">☀</span><p><strong>Colors follow local time</strong><small>sunrise yellow · noon gold · dusk orange · night purple</small></p></div>
+      </aside>
+      <span class="explore-pill">✦ Explore the cohort</span>
+      <div id="map" role="application" aria-label="World map of October 2026 cohort members"></div>
+    </section>
+    <footer>
+      <p><strong>Meet the map</strong> <span>cluster = local crew</span> <span>marker = individual member</span></p>
+      <p id="dataNote">4 profiles are waiting for a location.</p>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
